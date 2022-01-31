@@ -1,0 +1,302 @@
+html{
+  font-family: 'Open Sans', sans-serif;
+}
+/** Konzistencija css-a = 0 **/
+.h1WhatIsWeb3 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#f0f0f0;
+  font-size: 7em;
+  text-decoration: underline;
+  display: inline-block
+}
+@media only screen and (min-width: 320px) and (max-width:480px) {
+  .h1WhatIsWeb3{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+  .h1WhatIsWeb3{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.5em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+  .h1WhatIsWeb3{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5.5em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px){
+  .h1WhatIsWeb3{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:1201x) {
+  .h1WhatIsWeb3{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7em;
+    text-align: center;
+  }
+}
+
+.h1WhatIsWeb3:hover {
+  color: #FFFFFF;
+}
+
+body {
+  background-color: #131722;
+  overflow-x: hidden !important;
+}
+
+.container{
+  background-color: #131722;
+}
+
+label,h2,h4 {
+  color: #FFFFFF;
+}
+
+.bg-chart {
+  background-size: cover;
+}
+
+.naslov_objave, .card-text {
+  color:black;
+}
+
+.username_input {
+  border-color: #041C32;
+  border-radius: .3em;
+  border-style: solid;
+  border-width: .1em;
+  margin-bottom: 1%;
+  height: 2em;
+  width: 15em;
+
+}
+
+.password_input {
+  border-color: #041C32;
+  border-radius: .3em;
+  border-style: solid;
+  border-width: .1em;
+  margin-bottom: 1%;
+  height: 2em;
+  width: 15em;
+}
+
+.ca{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.ca:hover{
+  color: #FFFFFF;
+}
+/* Uspostavljamo grid koji smo generirali pomoću CSS Grid Generator-a kojeg je napravila Sarah Drasner twitter: @sarah_edo github: sdras*/
+.parent {
+  display: grid;
+  grid-template-columns: 0.2fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 2px;
+  justify-content: center;
+}
+/* Centriramo  */
+.row1 { justify-content: center; grid-area: 1 / 1 / 2 / 2; padding-top: 3vh; display: flex; justify-content: center;  align-items: center;}
+.row2 { justify-content: center; grid-area: 2 / 1 / 3 / 2; padding-top: 2vh; display: flex; justify-content: center;  align-items: center; }
+.row3 { justify-content: center; grid-area: 3 / 1 / 4 / 2; padding-top: 1vh; display: flex; justify-content: center;  align-items: center;}
+.row4 { justify-content: center; grid-area: 4 / 1 / 5 / 2; padding-top: 2vh; display: flex; justify-content: center;  align-items: center; margin-left: 13em;}
+.row5 { justify-content: center; grid-area: 5 / 1 / 6 / 2; padding-top: 1vh; display: flex; justify-content: center;  align-items: center;}
+
+.objaveTextarea {
+  border-style: none;
+  background-color: #313d5d;
+  resize: none;
+  color: white;
+  border-radius: 2em;
+  height: 3em;
+  width: 17em;
+  padding-left: 0.7em;
+  padding-top: 0.7em;
+}
+.objaveTextarea.sadrzaj {
+  border-style: none;
+  background-color: #313d5d;
+  resize: none;
+  color: white;
+  border-radius: 2em;
+  height: 3em;
+  width: 17em;
+  padding-left: 0.7em;
+  padding-top: 0.7em;
+}
+
+.fab.fa-tiktok {
+  color:#FFFFFF;
+}
+
+.TikTokerslink, .TikTokerslink:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.h1Web3{
+  color: #FFFFFF;
+  justify-content: center;
+}
+
+.parent_div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5em 20em;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  }
+  
+  .h1Web3 { grid-area: 1 / 1 / 2 / 2; font-size: 4em;}
+  .text-web3 { grid-area: 2 / 1 / 3 / 2; color: #FFFFFF; font-size:1em; }
+
+.grid-profile {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+}
+
+.outline-cube{
+  background-color: #1d2333;
+  border-radius: 1em;
+  width: 30em;
+  height: 30em;
+  margin-top: 24vh;
+  margin-left: 1vh;
+}
+.username{
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.id{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.puno_ime{
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.btn.btn-light.profile{
+ margin-left: 12.1em;
+ margin-top: 17.9em;
+}
+
+.btn.btn-light.profile.log-out{
+  margin-left: 13em;
+  margin-top: 1em;
+}
+
+.linkovi.container{
+  text-align: center;
+  margin-top: 10%;
+}
+
+.btn.btn-light.profile.admin{
+  margin-left: 12.1em;
+  margin-top: 7.2em;
+ }
+ 
+.btn.btn-light.profile.log-out.admin{
+  margin-left: 13em;
+  margin-top: 1em;
+}
+a.nova_objava, a.nova_objava:hover{
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-top: 0.5em;
+}
+
+h3.nova_objava{
+  margin-top: 2.9em;
+  margin-left: 6em;
+}
+
+.dodavanje_admina{
+  margin-left: 4.5em;
+}
+
+.grid.korisnicka.prijava {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-row-gap: 5px;
+  justify-items:center;
+  width: 18em;
+  height: 18em;
+  background-color: #FFFFFF;
+  border-radius: .5em;
+}
+
+.logo { grid-area: 1 / 1 / 2 / 2; margin-top: 2%;}
+.korisnicko_ime { grid-area: 2 / 1 / 3 / 2; }
+.lozinka { grid-area: 3 / 1 / 4 / 2; }
+.prijava { grid-area: 4 / 1 / 5 / 2; }
+
+a.nemas_racun{
+  color: #000000;
+  text-decoration: none;
+  margin-left: 2em;
+}
+
+.prijava_button{
+  border-style: none;
+  background-color: transparent;
+}
+
+.container.korisnicka.prijava {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.korisnicka.prijava.master{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
