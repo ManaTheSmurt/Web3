@@ -8,7 +8,10 @@ include("admin-objava-process.php");
         <title>Web3</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Web3- pomoć u vašem putu prema saznanju u novom poglavlju interneta">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Web3, kriptovalute, nft, nft-evi, blockchain, kripto mjenjačnice">
+        <meta name="author" content="Manuel Radaljac">
         <!--CSS datoteke za stilizaciju web-aplikacije -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -28,7 +31,7 @@ include("admin-objava-process.php");
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/sadrzaj.php">Sadržaj</a>
+          <a class="nav-link active" aria-current="page" href="/sve_objave.php">Sve objave</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="korisni_linkovi.php">Linkovi</a>
@@ -71,16 +74,16 @@ include("admin-objava-process.php");
         </div>
         <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3 mt-3">
-      <li class="nav-item"><a href="sadrzaj.php" class="nav-link px-2 text-muted">Sadržaj</a></li>
+      <li class="nav-item"><a href="sve_objave.php" class="nav-link px-2 text-muted">Sve objave</a></li>
       <li class="nav-item"><a href="korisni_linkovi.php" class="nav-link px-2 text-muted">Linkovi</a></li>
+      <li class="nav-item"><a href="o_projektu.php" class="nav-link px-2 text-muted">O projektu</a></li>
       <?php
             if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
               echo ' <li class="nav-item"><a href="korisnik_pregled_profila.php" class="nav-link px-2 text-muted">Profil</a></li>';
             }else{
-              echo ' <li class="nav-item"><a href="korisnik_prijava.php" class="nav-link px-2 text-muted">Prijava</a></li>';
+              echo ' <li class="nav-item"><a href="korisnik_prijava.php" class="nav-link px-2 text-muted">Prijavite se</a></li>';
             }
           ?>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted disabled">O projektu</a></li>
       <li class="nav-item"><a href="admin_prijava.php" class="nav-link px-2 text-muted">Admin</a></li>
     </ul>
     <p class="text-center text-muted">2022. | Manuel Radaljac | <a class="text-muted" href="mailto:manuel.radaljac@skole.hr?subject=Web3 - kontakt">manuel.radaljac@skole.hr</a></p>
@@ -91,6 +94,3 @@ include("admin-objava-process.php");
     <!-- Kod učitava koji učitava font awesome ikone -->
     <script src="https://kit.fontawesome.com/a9f583f331.js" crossorigin="anonymous"></script>
 </html>
-
-
-<!--U projektu su korišteni materijali sa stranica Bootstrap i Font Awesome te dijelovi koda iz mojih prijašnjih osobnih projekata-->

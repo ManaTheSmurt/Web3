@@ -5,4 +5,6 @@ tinymce.init({
     toolbar_mode: 'floating',
     tinycomments_mode: 'embedded',
     tinycomments_author: 'Author name',
+    height: "300px",
+    width: "600px",
   });

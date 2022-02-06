@@ -27,5 +27,12 @@
 		</div>
      </form>
      </div>
+	 <?php if (isset($_GET['success'])) { ?>
+        <h2 id="success" class="success" style="color: #FFFFFF;"><?php echo $_GET['success']; ?></h2>
+    <?php } ?>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$("#success").fadeOut(3000);
+	</script>
 </body>
 </html>

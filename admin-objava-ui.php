@@ -39,7 +39,7 @@ if (isset($_SESSION['admin_id']) && isset($_SESSION['admin_username'])) {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/sadrzaj.php">Sadržaj</a>
+          <a class="nav-link active" aria-current="page" href="/sve_objave.php">Sve objave</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="korisni_linkovi.php">Linkovi</a>
@@ -118,6 +118,22 @@ if (isset($_SESSION['admin_id']) && isset($_SESSION['admin_username'])) {
 }
 
 </script>
+<footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3 mt-3">
+      <li class="nav-item"><a href="sve_objave.php" class="nav-link px-2 text-muted">Sve objave</a></li>
+      <li class="nav-item"><a href="korisni_linkovi.php" class="nav-link px-2 text-muted">Linkovi</a></li>
+      <li class="nav-item"><a href="o_projektu.php" class="nav-link px-2 text-muted">O projektu</a></li>
+      <?php
+            if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
+              echo ' <li class="nav-item"><a href="korisnik_pregled_profila.php" class="nav-link px-2 text-muted">Profil</a></li>';
+            }else{
+              echo ' <li class="nav-item"><a href="korisnik_prijava.php" class="nav-link px-2 text-muted">Prijavite se</a></li>';
+            }
+          ?>
+      <li class="nav-item"><a href="admin_prijava.php" class="nav-link px-2 text-muted">Admin</a></li>
+    </ul>
+    <p class="text-center text-muted">2022. | Manuel Radaljac | <a class="text-muted" href="mailto:manuel.radaljac@skole.hr?subject=Web3 - kontakt">manuel.radaljac@skole.hr</a></p>
+  </footer>
 </body>
 <!-- Kod koji učitava main.js javascript skriptu -->
 <script src="/main.js"></script>

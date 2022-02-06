@@ -41,7 +41,7 @@ if (isset($_POST['username']) && isset($_POST['password'])
 
 	else{
 
-		// hashing the password
+		// hashiranje lozinke
 		$password = md5($password);
 
 	    $sql = "SELECT * FROM korisnici WHERE username='$username' ";
@@ -54,7 +54,7 @@ if (isset($_POST['username']) && isset($_POST['password'])
            $sql2 = "INSERT INTO korisnici(username, password,email) VALUES('$username', '$password', '$email')";
            $result2 = mysqli_query($conn, $sql2);
            if ($result2) {
-           	 header("Location: korisnik_registracija_ui.php?success=Vaš je račun napravljen.");
+           	 header("Location: korisnik_prijava.php?success=Uspješno napravljen račun!");
 	         exit();
            }else {
 	           	header("Location: korisnik_registracija_ui.php?error=Unknown error occurred&$user_data");

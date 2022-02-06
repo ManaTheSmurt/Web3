@@ -23,6 +23,7 @@
      		<p class="error" style="color:red;"><?php echo $_GET['error']; ?></p>
      		<?php } ?>
 			<div class="prijava"><button class="prijava_button" type="submit">Prijava</button> <a class="nemas_racun" href="korisnik_registracija_ui.php" class="ca">Nemaš račun?</a></div>
+			<b class="admin_prijava_upozorenje">Administratorska prijava</b>
 		</div>
 		</div>
      </form>

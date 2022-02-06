@@ -27,7 +27,7 @@ session_start();
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/sadrzaj.php">Sadržaj</a>
+          <a class="nav-link active" aria-current="page" href="/sve_objave.php">Sve objave</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="korisni_linkovi.php">Linkovi</a>
